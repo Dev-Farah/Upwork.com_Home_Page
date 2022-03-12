@@ -4,12 +4,12 @@
     box-sizing: border-box;
     font-family: "NeueMontreal", Helvetica, sans-serif;
 }
-/* body {
+body {
     overflow-y: scroll;
 }
 body::-webkit-scrollbar {
     display: none;
-} */
+}
 @font-face {
     font-family: "NeueMontreal";
     src: url(./fonts/neue-montreal-regular.woff2) format("woff2");
@@ -650,17 +650,9 @@ div.iconbox:hover {
 
 
 
+/*---------------- Media Queries ----------------*/
 
-
-
-
-
-
-
-
-
-
-
+/* Media Query for Large Screen */
 
 @media only screen and (max-width: 1034px) {
     .logo {
@@ -849,11 +841,9 @@ div.iconbox:hover {
     }
 }
 
-@media only screen and (max-width: ) {
-    
-}
+/* Media Query for Medium Screen */
 
-@media only screen and (max-width: 435px) {
+@media only screen and (max-width:778px) {
     nav, .services {
         display: none;
     }
@@ -885,6 +875,82 @@ div.iconbox:hover {
         margin: 0 15px 0 0;
     }
     .box1 {
+        margin: 0;
+    }
+    .box1 .text h1 {
+        font-size: 50px;
+    }
+    .box1 .text p {
+        font-size: 20px;
+    }
+    .box1 .trusted img {
+        height: 45px;
+    }
+    .box2 {
+        margin: 40px 0;
+    }
+    .box2 .content h1 {
+        font-size: 42px;
+    }
+    .box3 {
+        margin: 40px 0;
+    }
+    .box3 .lefttext h1 {
+        font-size: 42px;
+
+    }
+    .box3 .lefttext h3 {
+        font-size: 24px;
+    }
+    .box3 .lefttext p {
+        font-size: 16px;
+        /* padding: 10px 35px 15px 25px; */
+    }
+    .righttext {
+        padding: 60px 20px 20px 20px;
+    }
+    .box3 .righttext h2 {
+        font-size: 32px;
+    }
+    .imgdiv {
+        position: absolute;
+        top: 50px;
+        left: 385px;
+        width: 155px;
+        /* border: 1px solid red; */
+    }
+    .box4 {
+        margin: 50 0;
+    }
+    .box4 h1 {
+        font-size: 42px;
+
+    }
+    .hirelinks li a {
+        font-size: 24px;
+    }
+    .image4 {
+        width: 350px;
+    }
+    .btns button {
+        font-size: 12px;
+    }
+    .box5 {
+        margin: 0;
+    }
+    .text5 .top5 h1 {
+        font-size: 42px;
+    }
+    .box7 {
+        margin: 10px 0 30px 20px;
+        /* padding: 0 10px; */
+    }
+}
+
+/* Media Query for Large Mobile Screen */
+
+@media only screen and (max-width: 435px) {
+    .box1 {
         margin: 30px 15px;
         padding: 0;
     }
@@ -893,12 +959,6 @@ div.iconbox:hover {
     }
     .box1 .image {
         display: none;
-    }
-    .box1 .text h1 {
-        font-size: 50px;
-    }
-    .box1 .text p {
-        font-size: 20px;
     }
     .box1 button {
         margin: 15px 10px 30px 0;
@@ -926,15 +986,12 @@ div.iconbox:hover {
         /* border: 1px solid red; */
     }
     .box2 .content h3 {
-        font-size: 20px;
         margin: 15px 0 90px 0;
     }
     .box2 .content h1 {
-        font-size: 42px;
         width: 65%;
     }
     .box2 .content p {
-        font-size: 16;
         margin: 20px 0;
     }
     .containers {
@@ -1011,7 +1068,6 @@ div.iconbox:hover {
         /* border: 1px solid red; */
     }
     .righttext h2 {
-        font-size: 32px;
         width: 80%;
         padding: 30px 0;
         /* border: 1px solid red; */
@@ -1040,7 +1096,6 @@ div.iconbox:hover {
     }
     .talent button {
         width: 140px;
-        /* margin: 15px 15px 60px 0; */
         padding: 10px 30px;
         border: 1px solid #14a800;
         background-color: #14a800;
@@ -1064,7 +1119,6 @@ div.iconbox:hover {
         /* border: 1px solid red; */
     }
     .hirelinks h1 {
-        font-size: 42px;
         margin: 0 0 15px 0;
     }
     .h1-links ul {
@@ -1072,8 +1126,6 @@ div.iconbox:hover {
     }
     .h1-links li {
         display: none;
-        font-size: 24px;
-        /* font-weight: bold; */
         width: 200px;
     }
     .h1-links li.it {
@@ -1088,10 +1140,7 @@ div.iconbox:hover {
         display: none;
         /* border: 1px solid red; */
     }
-    .btns button {
-        font-size: 12px;
-    }
-
+    
     .box5 {
         margin: 0;
         display: flex;
@@ -1129,7 +1178,6 @@ div.iconbox:hover {
     }
     .text5 .top5 h1 {
         width: 75%;
-        font-size: 42px;
         /* border: 1px solid red; */
     }
     .text5 .top5 p {
@@ -1139,8 +1187,6 @@ div.iconbox:hover {
         /* border: 1px solid red; */
     }
     .text5 .bottom5 {
-        /* display: flex;
-        justify-content: space-between; */
         border-top: 1px solid #ffffff;
         flex-wrap: wrap;
         padding-top: 10px;
@@ -1298,6 +1344,8 @@ div.iconbox:hover {
         padding: 10px 25px 0 0;
     }
 }
+
+/* Media Query for Medium Mobile Screen */
 
 @media only screen and (max-width: 385px) {
     .imgdiv {
